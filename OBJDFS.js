@@ -55,13 +55,13 @@ function OBJDFS (source, searchString, sourceName, maxDepth) {
     }) (source);
 };
 
-function DOMDFS (searchString, maxDepth) {
+function WINDFS (searchString, maxDepth) {
     return OBJDFS (window, searchString, 'window', maxDepth);
 }
 
 return {
     OBJDFS: OBJDFS,
-    DOMDFS: DOMDFS
+    WINDFS: WINDFS
 };
 
 }) ();
